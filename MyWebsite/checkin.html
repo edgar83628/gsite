@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check-In</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles/checkin.css">
+    </head>
+<body>
+
+<div class="about-section">
+  <h1 id="title">Iglesia Christiana Shalom</h1>
+  <h3 id="eventyear">2021 Summer Event</h3>
+  <p>Welcome to our official 2021 summer event website.</p>
+</div>
+
+<h2 id="attendance">Attendance / Asistencia</h2>
+<div class="row">
+  <div style="text-align:center" class="card">
+    <img src="images/rating.png" alt="groups" style="width: 16%">
+    <div class="container">
+      <h2>Enter your full name.</h2>
+      <p class="title"></p>
+      <p>Introduzca su nombre completo.</p>
+      <p>+5 Points/day</p>
+      <!-- HTML form start: first and last name -->
+      <form name="assistance" action="Check-In.php" method="post">
+        <div class="container">
+          <!-- First name field-->
+          <div class="form_group">
+            <label>First Name: </label>
+            <input type="text" name="fname" value="" required>
+          </div>
+          <!-- Last name field -->
+          <div class="form_group">
+            <label>Last Name: </label>
+            <input type="text" name="lname" value="" required>
+          </div>
+          <!-- Last name field -->
+          <div class="form_group">
+            <label>ID: </label>
+            <input type="text" name="id" value="" required><!-- Center ID to match others -->
+          </div>
+          <button class="button">Submit</button>
+        </div>
+      </form>
+      <!-- HTML form end-->
+    </div>
+  </div>
+</div>
